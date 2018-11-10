@@ -1,7 +1,9 @@
 [package]
 name = "iter_fallback"
 version = "0.1.0"
-authors = ["Avi ד"]
-edition = "2018"
+authors = ["Avi ד <avi.the.coder@gmail.com>"]
+license = "Apache-2.0"
+description = "first iter then second iter from nth = first iter len"
+repository = "https://github.com/Avi-D-coder/iter_fallback"
 
 [dependencies]
