@@ -1,3 +1,5 @@
+[![crates.io](https://img.shields.io/crates/v/iter_fallback.svg)](https://crates.io/crates/iter_fallback)
+
 # iter_fallback
 An iterator that falls back to a second iterator when the first one is exusted.
 ```rs

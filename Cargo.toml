@@ -1,9 +1,10 @@
 [package]
 name = "iter_fallback"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Avi ד <avi.the.coder@gmail.com>"]
 license = "Apache-2.0"
-description = "first iter then second iter from nth = first iter len"
+readme = "README.md"
+description = "Drive two iters, exhaust first then fallback on the rest of second"
 repository = "https://github.com/Avi-D-coder/iter_fallback"
 
 [dependencies]
