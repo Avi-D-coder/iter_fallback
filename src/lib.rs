@@ -1,9 +1,8 @@
-trait FallBackOn<I> {
+pub trait FallBackOn<I> {
     fn fallback(self, then: I) -> FallBack<I>;
 }
 
-struct FallBack<I> {
-    index: usize,
+pub struct FallBack<I> {
     first: I,
     then: I,
 }
@@ -13,11 +12,7 @@ where
     I: Iterator<Item = T>,
 {
     fn fallback(self, then: I) -> FallBack<I> {
-        FallBack {
-            index: 0,
-            first: self,
-            then,
-        }
+        FallBack { first: self, then }
     }
 }
 
@@ -27,7 +22,7 @@ where
 {
     type Item = T;
     fn next(&mut self) -> Option<T> {
-        self.first.next().or(self.then.nth(self.index))
+        self.first.next().or(self.then.next())
     }
 }
 
